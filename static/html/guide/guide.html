@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>가이드 </title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/jquery-3.4.1.min.js"></script>
+    <script src="../../js/TNUI.js"></script>
+    <script src="../../js/guide.js"></script><!-- 개발자전달 : 실개발시 import 하지 않습니다 -->
+    <script src="../../js/common.js"></script>
+    
+    <style>
+        .guidewrap {
+            width: 100%;
+            margin: 0 auto;
+            line-height: 1.6;
+            color:#fff;
+
+        }
+
+        .guideTit {
+            padding: 35px 0 0
+        }
+
+        .guideTit>strong {
+            display: block;
+            padding: 0 0 15px;
+            margin-bottom: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            border-bottom: 1px solid #999;
+        }
+
+        .sub_tit {
+            display: block;
+            padding: 10px 0;
+            font-size: 14px;
+            font-weight: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="guidewrap containerSub">
+        <div class="container">
+                
+            <div class="guideTit">
+                <strong>font</strong>
+                <p class="fw-l">notokr LIGHT, class: fw-l , font-weight: 100</p>
+                <p class="fw-r">notokr REGULAR, class: fw-r , font-weight: 300</p>
+                <p class="fw-m">notokr MEDIUM, class: fw-m , font-weight: 500</p>
+                <p class="fw-b">notokr BOLD, class: fw-b , font-weight: 700</p>
+            </div>
+            
+
+            <div class="guideTit">
+                <strong>버튼</strong>
+                <p><strong class="sub_tit">로그인 버튼</strong></p>
+                <div class="btn_wrap" style="padding:20px 25px; background: #101113; text-align: center;">
+                    <button type="button" class="btn_login"><span>LOGIN</span></button>
+                </div>
+                <p><strong class="sub_tit">setmode 버튼</strong></p>
+                <button type="button" class="btn_mode"><span>EU STG</span></button>
+            </div>
+
+
+            <div class="guideTit">
+                <strong>input text</strong>
+                <div class="btn_wrap" style="padding:20px 25px; background: #101113; text-align: center;">
+                    <span class="inp_wrap login_id">
+                        <input type="text" placeholder="ID" class="">
+                    </span>
+                    <span class="inp_wrap login_pass">
+                        <input type="password" placeholder="Password" class="">
+                    </span>
+                </div>
+                
+            </div>
+            
+            <div class="guideTit">
+                <strong>list</strong>
+                <ul class="list">
+                    <li>
+                        <span class="date">2020-02-03 <span class="time">17:34 :47</span></span>
+                        <span class="subject">
+                            Checked AWS Device Farm : HAEE_UVO_PRD/JB_PIXEL
+                        </span>
+                    </li>
+                    <li>
+                        <span class="date">2020-02-03 <span class="time">17:34 :47</span></span>
+                        <span class="subject">
+                            AWS Device Farm Test Info : [ANDROID_APP : EUKIUVO_Android_20200107_V1.116_123_PRD_debug.apk],[APPIUM_NODE_TEST_PACKAGE :uvo-prd-0202-2.zip], [APPIUM_NODE_TEST_SPEC : uvo-prd-0202.yml]
+                        </span>
+                    </li>
+                   
+                </ul>
+                
+            </div>
+
+    </div>
+
+
+    </div>
+
+
+    <!-- 페이지 호출 스크립트 -->
+    <script>
+        $(document).ready(function () {
+        });
+    </script>
+</body>
+
+</html>
