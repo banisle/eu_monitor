@@ -56,12 +56,22 @@ html,body{height: 100%;}
 		 url('../fonts/notokr-bold.woff2') format('woff2'),
 		 url('../fonts/notokr-bold.woff') format('woff');
 }
+@font-face {
+	font-family: 'notokr';
+	font-style: normal;
+	font-weight: 900;
+	src: url('../fonts/notosans-extrabold-webfont.eot');
+	src: url('../fonts/notosans-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/notosans-extrabold-webfont.woff2') format('woff2'),
+		 url('../fonts/notosans-extrabold-webfont.woff') format('woff');
+}
 
 
 .fw-l{font-weight: 100}
 .fw-r{font-weight: 300}
 .fw-m{font-weight: 500}
 .fw-b{font-weight: 700}
+.fw-eb{font-weight: 900}
 
 /* 선택 포커스, 아웃라인 제거 할시 하단 주석 제거 */
 *{-webkit-tap-highlight-color:transparent;outline: none;}

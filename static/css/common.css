@@ -8,7 +8,7 @@ body{
 .login h1 strong{
     padding: 0 8px;
     font-size: 42px;
-    font-weight: 700;
+    font-weight: 900;
 }
 .login h1 em{position: relative; top: -4px;font-size: 36px; font-style: normal; opacity:.7}
 
@@ -76,7 +76,7 @@ body{
     font-weight: 100;
     color: #4796f7;
 }
-.containerSub header h1 strong{position: relative;top: 3px; font-size: 26px; font-weight: 700;}
+.containerSub header h1 strong{position: relative;top: 3px; font-size: 26px; font-weight: 900;}
 .containerSub header h1 em{font-size: 22px; font-style: normal;opacity: .7;}
 .containerSub header h1 span{padding-left: 10px; font-weight: 100;opacity: .85;}
 
