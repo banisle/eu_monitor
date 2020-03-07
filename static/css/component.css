@@ -531,7 +531,7 @@ ul.ui-tab li span {
 	position: absolute;
 	top: 0;
 	right: 0;
-	background: #c7c4d7;
+	background: #dedcee;
 	height: 100%;
 	width: 6px;
 	border-radius: 5px;
@@ -543,7 +543,7 @@ ul.ui-tab li span {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: #dedcee;
+	background: #c7c4d7;
 	width: 100%;
 	border-radius: 5px;
 	z-index: 1;
@@ -573,3 +573,85 @@ html.mobile .ui-content {
 	padding: 0;
 }
 
+/* //mark:  어코디언 */
+.ui-accordian.sub-accord {
+	padding: 10px;
+}
+
+.ui-accordian h3.acco-btn {
+	padding: 0;
+	margin: 0;
+}
+
+.ui-accordian h3.acco-btn .ui-btn-acco {
+	display: block;
+	position: relative;
+	width: 100%;
+	text-align: left;
+	border-bottom: 0;
+}
+
+.ui-accordian h3.acco-btn .ui-btn-acco:after {
+	content: "";
+	width: 14px;
+	height: 8px;
+	position: absolute;
+	background: url('../img/icn_ir.png') -84px -92px no-repeat;
+	z-index: 1111;
+	top: 50%;
+	right: 15px;
+	transform: translateY(-50%);
+}
+
+.ui-accordian li.active .ui-btn-acco:after {
+	content: "";
+	width: 14px;
+	height: 8px;
+	position: absolute;
+	background: url('../img/icn_ir.png') -126px -92px no-repeat;
+	z-index: 1111;
+	top: 50%;
+	right: 15px;
+	transform: translateY(-50%);
+}
+
+.ui-accordian .ui-acco-ct {
+	overflow: hidden;
+	height: 0px;
+}
+
+.ui-accordian .acco-ct {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	border-bottom: 0;
+	border-top: 1px solid #d2d2d2;
+	background: #eeedf6;
+	box-sizing: border-box;
+}
+
+.ui-accordian > li {
+	border-bottom: 1px solid #d2d2d2;
+	box-sizing: border-box;
+}
+
+.ui-accordian li:last-child {
+}
+
+.ui-accordian li.active {
+}
+
+.ui-accordian li.active+li {
+}
+
+.ui-accordian li.active:last-child {
+}
+
+.ui-accordian > li:hover {
+}
+
+.ui-accordian li:hover+li {
+}
+
+.ui-accordian li:last-child:hover {
+}

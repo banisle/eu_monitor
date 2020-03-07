@@ -158,31 +158,94 @@ body{
 .list li .subject{flex-wrap: wrap;flex:1;line-height: normal;}
 
 /* //mark: view */
+.statusview{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .statusview .card{
     float: left;
     width: 48.89%;
     margin-bottom: 50px;
     box-sizing: border-box;
+    background: #fff;
 }
-.statusview .card:nth-child(2n){ float: right; }
+.statusview .card--v2{
+    flex: none;
+    width: 100%;
+}
+.statusview .card--v2 .listWrap{
+    padding: 12px 0 14px;
+}
+.statusview .card--v2 .acco-ct{ min-height: 218px; }
+.statusview .card--v2 .acco-ct .scrollWrap { height: 218px; }
+.statusview .card--v2 { width: calc(100% - 12px); box-sizing: border-box;}
+.statusview .card--v2 .tit{display: inline-block; width: 176px; padding-left: 42px; font-size: 12px; font-weight: 700; color: rgba(16, 16, 17, .6);}
+.statusview .card--v2 .tit--v2{
+    display: block;
+    margin: 0 20px 0 32px;
+    padding-top: 4px;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    border-bottom: 1px solid #8d8d8e;}
+.statusview .card--v2 .dt-tit{ 
+    padding-bottom: 14px; line-height: 1;
+    font-size: 16px;
+    font-weight: 700;
+    border-bottom: 1px solid #8d8d8e;
+}
+.statusview .card--v2 .noti{font-size: 14px; font-weight: 700;padding-left: 20px; color: #101011}
+.statusview .card--v2 .noti--st{position: relative; font-size: 14px; font-weight: 700;padding-left: 20px; color: #101011}
+.statusview .card--v2 .noti--stat{
+    float: right;
+    padding-right: 73px;
+}
+.statusview .card--v2 .noti--st::after{
+    position: absolute;
+    top:50%;
+    left: 0;
+    width: 1px;
+    height: 10px;
+    background: #d2d2d2;
+    transform: translateY(-50%);
+}
+.statusview .card--v2 .subject{
+    display: inline-block;
+    padding: 0 0 0 30px;
+    margin-left: 45px;
+    border-bottom: 0;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+    color: rgba(16, 16, 17, .6);
+}
+.statusview .card--v2 .subject .period{font-weight: 500;}
+
+.statusview .card:nth-child(2n){float: right;}
 .statusview .card:nth-child(2n+1){ clear: both; }
-.statusview .card:last-child{ margin-bottom: 0; }
-.statusview .card:nth-last-child( 2 ){ margin-bottom: 0; }
-.statusview .card .cardwrap{ padding: 35px 30px; color: #101011; background: #fff; }
+.statusview .card:nth-last-child( 2 ){ margin-bottom:30px; }
+.statusview .card:nth-last-child( 3 ){ margin-bottom:30px; }
+.statusview .card .cardwrap{ padding: 35px 30px; color: #101011; }
+.statusview .card--v2 .cardwrap{ padding: 20px 30px 49px 30px;box-sizing: border-box;}
+.scrollbar--v1{background-color: #ececec;}
+.scrollbar--v1 .bar{background-color: #d7d7d7;}
 .statusview .card.error .cardwrap{ padding-bottom: 0; }
-.statusview .card dt{
+.stat_default,
+.stat_success,
+.stat_error{
+    display: block;
     position: relative;
     padding-bottom: 30px;
+    padding-left: 32px;
     font-size: 20px;
     font-weight: 900;
     color: #101011;
     border-bottom: 1px solid #8d8d8e;
 }
-.statusview .card.active dt,
-.statusview .card.error dt{
-    padding-left: 32px;
-}
-.statusview .card.active dt::after{
+.stat_default{padding-left: 0;}
+.stat_success::after{
     content: '';
     display: block;
     position: absolute;
@@ -194,7 +257,7 @@ body{
     background: radial-gradient(circle, rgba(71,247,104,1) 0%, rgba(4,103,2,1) 70%);
     border-radius: 50%;
 }
-.statusview .card.error dt::after{
+.stat_error::after{
     content: '';
     display: block;
     position: absolute;
@@ -206,25 +269,34 @@ body{
     background: radial-gradient(circle, rgba(247,71,121,1) 0%, rgba(126,2,32,1) 70%);
     border-radius: 50%;
 }
+.stat_success--v2,
+.stat_error--v2{
+    padding: 0 0 0 32px;
+    border-bottom: 0;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(16, 16, 17, .6);
+}
+.stat_success--v2::after,
+.stat_error--v2::after{width: 14px;height: 14px;top:50%; transform: translateY(-50%);}
 
-.statusview .card dd ul{
+.statusview .card dd .card-list{
     padding-bottom: 50px;
 }
-.statusview .card dd ul li{
+.statusview .card dd .card-list > li{
     display: flex;
     align-items: center;
     padding:13px 0 14px;
     border-bottom: 1px solid #d2d2d2;
 }
-.statusview .card dd ul .tit{
+.statusview .card dd .card-list .tit{
     flex-basis: 105px;
     color: #707070;
 }
-.statusview .card dd ul .subject{
+.statusview .card dd .card-list .subject{
     flex:1;
     line-height: normal;
 }
-
 
 .errorList{
     background: #fff;
@@ -247,24 +319,33 @@ body{
 .errorList .scrollWrap{ 
     height: 400px; 
 }
-.errorList .scrollWrap ol{
+.ol-list{
     padding-left: 11px;
     padding-top: 17px;
 }
-.errorList .scrollWrap ol li{
+.ol-list > li{
     position: relative;
     padding-left: 22px;
     padding-bottom: 28px;
     counter-increment: num-counter;
 }
-.errorList .scrollWrap ol li::before{
+.ol-list > li::before{
     content: counter(num-counter)'.';
     color: #101011;
     font-size: 16px;
     position: absolute;
     left: 0;
 }
-
+.ol-list--v2 {margin-left: 21px;}
+.ol-list--v2 > li{ padding-bottom: 10px; font-size: 12px; font-weight: 500; }
+.ol-list--v2 > li:last-child{ padding-bottom: 20px}
+.ol-list--v2 > li::before{
+    content: counter(num-counter)'.';
+    color: #101011;
+    font-size: 12px;
+    position: absolute;
+    left: 0;
+}
 /* //mark: setmode */
 .modeSelect{
     display: flex;

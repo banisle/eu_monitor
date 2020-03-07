@@ -34,9 +34,9 @@
                     <div class="card active">
                         <div class="cardwrap">
                             <dl>
-                                <dt>Always-On Monitoring Status</dt>
+                                <dt><span class="stat_success">Always-On Monitoring Status</span></dt>
                                 <dd>
-                                    <ul>
+                                    <ul class="card-list">
                                         <li>
                                             <span class="tit">Duration</span>
                                             <span class="subject">
@@ -58,9 +58,9 @@
                     <div class="card">
                         <div class="cardwrap">
                             <dl>
-                                <dt>Automated Test Status</dt>
+                                <dt><span class="stat_default">Automated Test Status</span></dt>
                                 <dd>
-                                    <ul>
+                                    <ul class="card-list">
                                         <li>
                                             <span class="tit">Test Date</span>
                                             <span class="subject">
@@ -82,9 +82,9 @@
                     <div class="card error">
                         <div class="cardwrap">
                             <dl>
-                                <dt>Always-On Monitoring Status</dt>
+                                <dt><span class="stat_error">Always-On Monitoring Status</span></dt>
                                 <dd>
-                                    <ul>
+                                    <ul class="card-list">
                                         <li>
                                             <span class="tit">Duration</span>
                                             <span class="subject">
@@ -109,7 +109,7 @@
                                     <div class="ui-scrollbar"><span class="bar"></span></div>
                                     <div class="scrollInner ui-scrollarea">
                                         <div class="scrollview ui-content">
-                                            <ol>
+                                            <ol class="ol-list">
                                                 <li>VIN : HIOWS0000000<br/>TID : XSWEGGAD0<br/>SCENARIO : TIG-A</li>
                                                 <li>VIN : HIOWS0000000<br/>TID : XSWEGGAD0<br/>SCENARIO : TIG-A</li>
                                                 <li>VIN : HIOWS0000000<br/>TID : XSWEGGAD0<br/>SCENARIO : TIG-A</li>
@@ -128,9 +128,9 @@
                     <div class="card">
                         <div class="cardwrap">
                             <dl>
-                                <dt>Automated Test Status</dt>
+                                <dt><span class="stat_default">Automated Test Status</span></dt>
                                 <dd>
-                                    <ul>
+                                    <ul class="card-list">
                                         <li>
                                             <span class="tit">Test Date</span>
                                             <span class="subject">
@@ -147,8 +147,116 @@
                                             <span class="tit">Test Status</span>
                                             <span class="subject">
                                                 Passed
-    
                                             </span>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+
+                    </div>
+                    
+                    <!-- history-->
+                    <div class="card card--v2">
+                        <div class="cardwrap">
+                            <dl class="scrollin">
+                                <dt class="dt-tit">HISTORY</dt>
+                                <dd>
+                                    <ul class="ui-accordian" data-allow-multiple="true" data-trans-speed="300">
+                                        <li>
+                                            <div class="listWrap">
+                                                <h3 class="acco-btn">
+                                                    <button type="button" id="ui-acco11" class="ui-btn-acco" aria-expanded="false" aria-controls="acco11" aria-disabled="false">
+                                                        <span class="tit">Always-On Monitoring Status</span>
+                                                        <span class="subject">
+                                                            <span class="stat_error stat_error--v2">Fri, 21 Feb 2020 07:29:17 - Fri, 21 Feb 2020 07:34:17</span>
+                                                        </span>
+                                                        <span class="noti">Found 16 error transactions</span>
+                                                    </button>
+                                                </h3>
+                                            </div>
+
+                                            <div class="ui-acco-ct" id="acco11" aria-labelledby="ui-acco01" role="region">
+                                                <div class="acco-ct">
+                                                    <div class="scrollWrap ui-scrollview" >
+                                                        <div class="ui-scrollbar"><span class="bar"></span></div>
+                                                        <div class="scrollInner ui-scrollarea">
+                                                            <div class="scrollview ui-content">
+                                                                <strong class="tit--v2">Error Transactions</strong>
+                                                                <ol class="ol-list ol-list--v2">
+                                                                    <li>VIN : HIOWS0000000<br/>TID : XSWEGGAD0<br/>SCENARIO : TIG-A</li>
+                                                                    <li>VIN : HIOWS0000000<br/>TID : XSWEGGAD0<br/>SCENARIO : TIG-A</li>
+                                                                    <li>VIN : HIOWS0000000<br/>TID : XSWEGGAD0<br/>SCENARIO : TIG-A</li>
+                                                                    <li>VIN : HIOWS0000000<br/>TID : XSWEGGAD0<br/>SCENARIO : TIG-A</li>
+                                                                    <li>VIN : HIOWS0000000<br/>TID : XSWEGGAD0<br/>SCENARIO : TIG-A</li>
+                                                                    <li>VIN : HIOWS0000000<br/>TID : XSWEGGAD0<br/>SCENARIO : TIG-A</li>
+                                                                </ol>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="listWrap">
+                                                <span class="tit">Automated Test Status</span>
+                                                <span class="subject">
+                                                    <span class="period">Fri, 21 Feb 2020 07:29:17</span>
+                                                </span>
+                                                <span class="noti noti--stat">COMPLETED <span class="noti--st">Passed</span></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="listWrap">
+                                                <span class="tit">Automated Test Status</span>
+                                                <span class="subject">
+                                                    <span class="period">Fri, 21 Feb 2020 07:29:17</span>
+                                                </span>
+                                                <span class="noti noti--stat">COMPLETED <span class="noti--st">Passed</span></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="listWrap">
+                                                <span class="tit">Always-On Monitoring Status</span>
+                                                <span class="subject">
+                                                    <span class="stat_error stat_error--v2">Fri, 21 Feb 2020 07:29:17 - Fri, 21 Feb 2020 07:34:17</span>
+                                                </span>
+                                                <span class="noti">Found 16 error transactions</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="listWrap">
+                                                <h3 class="acco-btn">
+                                                    <button type="button" id="ui-acco12" class="ui-btn-acco" aria-expanded="false" aria-controls="acco12" aria-disabled="false">
+                                                        <span class="tit">Always-On Monitoring Status</span>
+                                                        <span class="subject">
+                                                            <span class="stat_success stat_success--v2">Fri, 21 Feb 2020 07:29:17 - Fri, 21 Feb 2020 07:34:17</span>
+                                                        </span>
+                                                        <span class="noti">Found 16 error transactions</span>
+                                                    </button>
+                                                </h3>
+                                            </div>
+
+                                            <div class="ui-acco-ct" id="acco12" aria-labelledby="ui-acco01" role="region">
+                                                <div class="acco-ct">
+                                                    <div class="scrollWrap ui-scrollview" >
+                                                        <div class="ui-scrollbar"><span class="bar"></span></div>
+                                                        <div class="scrollInner ui-scrollarea">
+                                                            <div class="scrollview ui-content">
+                                                                <strong class="tit--v2">Error Transactions</strong>
+                                                                <ol class="ol-list ol-list--v2">
+                                                                    <li>VIN : HIOWS0000000<br/>TID : XSWEGGAD0<br/>SCENARIO : TIG-A</li>
+                                                                    <li>VIN : HIOWS0000000<br/>TID : XSWEGGAD0<br/>SCENARIO : TIG-A</li>
+                                                                    <li>VIN : HIOWS0000000<br/>TID : XSWEGGAD0<br/>SCENARIO : TIG-A</li>
+                                                                    <li>VIN : HIOWS0000000<br/>TID : XSWEGGAD0<br/>SCENARIO : TIG-A</li>
+                                                                    <li>VIN : HIOWS0000000<br/>TID : XSWEGGAD0<br/>SCENARIO : TIG-A</li>
+                                                                    <li>VIN : HIOWS0000000<br/>TID : XSWEGGAD0<br/>SCENARIO : TIG-A</li>
+                                                                </ol>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </li>
                                     </ul>
                                 </dd>
@@ -166,6 +274,7 @@
 <script>
      // 내부스크롤 
     TNUI.module.scrollUi();
+    TNUI.module.accoUi();
     
 </script>
 </html>
