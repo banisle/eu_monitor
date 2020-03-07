@@ -178,9 +178,9 @@ body{
 .statusview .card--v2 .listWrap{
     padding: 12px 0 14px;
 }
-.statusview .card--v2 .acco-ct{ min-height: 218px; }
+.statusview .card--v2 .acco-ct{ min-height: 218px; padding-right: 15px;}
 .statusview .card--v2 .acco-ct .scrollWrap { height: 218px; }
-.statusview .card--v2 { width: calc(100% - 12px); box-sizing: border-box;}
+.statusview .card--v2 { box-sizing: border-box;}
 .statusview .card--v2 .tit{display: inline-block; width: 176px; padding-left: 42px; font-size: 12px; font-weight: 700; color: rgba(16, 16, 17, .6);}
 .statusview .card--v2 .tit--v2{
     display: block;
